@@ -8,7 +8,6 @@ const botOptions = {
   disable_notification: true,
 };
 const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN);
-// const { testMessage } = require("./actions.js");
 
 module.exports = async (request, response) => {
   try {
