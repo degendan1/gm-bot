@@ -45,6 +45,13 @@ async function processMessage(message) {
     `Gooooooooooood morning ${name}! Whatever you set your mind on, you will achieve.`,
     `YEEEEEEEEEEEEEAAAAAAAAAAAAAAAAAAAAAAA LETSSSSSSSSSSSSSSSSSSS GOOOOOOOOOOOOOOOOOOOO ${name.toUpperCase()}!!!!!!!!!!!!!!!!!!!!!! GET SOME BREAKKY INTO YA GUTS, SOME COFFEE AND A CIG AND LET'S MAKE SOME FUCKKKKKKKKKKKKKKINNNNG MOOOOOOOOOOOOOOOOOOOOOOOOONEEEYYYYYYYYYYYYYYYYYYY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!`,
     `Ah, where do I begin. It's been a long time since I first met ${name} and when I first gazed upon their beauty. Their stunning features blew me away. ${name} was just a youngin' in those days, still with the world in the palms of their hands. But I knew something, I could tell - even then - what an impact ${name} was going to have. Over the years, I've noticed that same impact grow stronger and stronger, and so have the people that have had the pleasure of knowing ${name}. It wasn't until a few months ago that I truly wanted something for ${name}, to give back for all the monumental impacts they have had on the lives of their family, friends, girlfriends, boyfriends, strangers, whoever. And words, until now, have escaped me for what that something is. But I know now it's for ${name} to have a good morning.`,
+    `Good morning ${name} Hey, you know that shitcoin you've been holding? Well it's gonna make you rich one day!`,
+    `Good morning ${name}! You are a superstar destined for greatness.`,
+    `A little birdie told me that you're due for some good luck ${name}. Hopefully that luck comes around today! Have a great morning!`,
+    `Good morning ${name}! You are the brightest star in the darkest night <3`,
+    `Good morning ${name}, today I see a pasture of green dildos for you ;)`,
+    `I may be a bot, but it doesn't take someone pre-typing out this sentence to know that ${name} is a friggin legend!! You go get 'em today!`,
+    `Ow, we need ${name}, we gotta have ${name}, c'mon, la la la la la, Doo doo doo doo doo doo doo, owww!`,
   ];
 
   const getRandomReply = function (textArr) {
@@ -58,6 +65,4 @@ async function processMessage(message) {
     reply = await getRandomReply(replyArr);
     await bot.sendMessage(id, reply, botOptions);
   }
-  // Send reply back in html and
-  // wait for the request to finish
 }
