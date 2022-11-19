@@ -56,11 +56,8 @@ async function processMessage(message) {
   // Commands
   if (cmd == "gm") {
     reply = await getRandomReply(replyArr);
-  } else {
-    console.log("Command not found: " + cmd + "Try typing /help");
+    await bot.sendMessage(id, reply, botOptions);
   }
-
   // Send reply back in html and
   // wait for the request to finish
-  await bot.sendMessage(id, reply, botOptions);
 }
