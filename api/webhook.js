@@ -52,9 +52,6 @@ async function processMessage(message) {
     `Good morning ${name}, today I see a pasture of green dildos for you ;)`,
     `I may be a bot, but it doesn't take someone pre-typing out this sentence to know that ${name} is a friggin legend!! You go get 'em today!`,
     `Ow, we need ${name}, we gotta have ${name}, c'mon, la la la la la, Doo doo doo doo doo doo doo, owww!`,
-  ];
-
-  const newRepliesArr = [
     "Good morning, degen! Rise from your LED-lit cave and embrace the sun. You might be tired from a night of crypto vigilance, but remember, every new day is a chance to turn that messy apartment into a luxurious penthouse! 🌞🕶🌆💸",
     "Hey there, chart zombie! It's time to crawl out of your dark, disorganized lair and face the daylight. Sure, your eyes might sting a bit, but who knows, maybe today's the day your crypto dreams come true! Have an energizing morning, degen! 🌞🧟‍♂️📈💰",
     "Rise and shine, nocturnal degen! You may have spent the night glued to your screen, but now it's time to take a break from the chaos and enjoy some fresh air. Remember, a clear mind brings better crypto decisions. Have a refreshing morning! 🌞💻🍃🚀",
@@ -67,10 +64,8 @@ async function processMessage(message) {
     "Rise and shine, LED-lit crypto dweller! It's time to swap the glow of your screens for the warmth of the sun. As you navigate the chaos of your apartment, remember that brighter days are ahead. Have a fantastic morning, degen! 🌞🖥🌈💰",
   ];
 
-  const repliesArr = replyArr.concat(newRepliesArr);
-
   const getRandomReply = function (textArr) {
-    return repliesArr[Math.floor(Math.random() * textArr.length)];
+    return textArr[Math.floor(Math.random() * textArr.length)];
   };
 
   const cmd = text.match(/(?<=\/).*?(?=$| |@)/);
