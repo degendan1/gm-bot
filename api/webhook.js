@@ -54,8 +54,23 @@ async function processMessage(message) {
     `Ow, we need ${name}, we gotta have ${name}, c'mon, la la la la la, Doo doo doo doo doo doo doo, owww!`,
   ];
 
+  const newRepliesArr = [
+    "Good morning, degen! Rise from your LED-lit cave and embrace the sun. You might be tired from a night of crypto vigilance, but remember, every new day is a chance to turn that messy apartment into a luxurious penthouse! 🌞🕶🌆💸",
+    "Hey there, chart zombie! It's time to crawl out of your dark, disorganized lair and face the daylight. Sure, your eyes might sting a bit, but who knows, maybe today's the day your crypto dreams come true! Have an energizing morning, degen! 🌞🧟‍♂️📈💰",
+    "Rise and shine, nocturnal degen! You may have spent the night glued to your screen, but now it's time to take a break from the chaos and enjoy some fresh air. Remember, a clear mind brings better crypto decisions. Have a refreshing morning! 🌞💻🍃🚀",
+    "Top of the mornin', crypto cavern dweller! Time to stretch those cramped limbs, open the curtains, and let the sunlight chase away the shadows of your messy abode. Who knows, maybe today you'll strike crypto gold! Have an invigorating morning, degen! 🌞🦇🏠💎",
+    "G'morning, fellow night owl! As you emerge from your screen-lit sanctuary, take a moment to envision a future of well-rested nights and crypto-fueled luxury. Embrace the day and seize those opportunities! Have a fantastic morning, degen! 🌞🦉🌇💹",
+    "Hey there, LED-lit warrior! Peel yourself away from those charts and embrace the sunlight. Your apartment may be a mess, but there's a world of crypto success waiting for you out there. Have a bright and inspiring morning, degen! 🌞🛡🌍💰",
+    "Good morning, bleary-eyed crypto enthusiast! It's time to rise from your dark, cluttered nest and face the world with renewed vigor. As you bask in the sunlight, remember that every day is a fresh start in the pursuit of crypto greatness! Have an uplifting morning, degen! 🌞👀🚀🌟",
+    "Morning, screen-tanned degen! Time to take a break from your glowing gadgets, step out of your chaotic crypto cave, and soak up some real-life sunshine. Embrace the day and inch closer to those extravagant dreams! Have a vibrant morning! 🌞📱🌻🏰",
+    "Hey, crypto hermit! The sun's calling your name, so emerge from your dimly lit, disheveled abode and take in the fresh air. Remember, even in the darkest of times, there's always a new opportunity just around the corner. Have a revitalizing morning, degen! 🌞🦀🌬🔮",
+    "Rise and shine, LED-lit crypto dweller! It's time to swap the glow of your screens for the warmth of the sun. As you navigate the chaos of your apartment, remember that brighter days are ahead. Have a fantastic morning, degen! 🌞🖥🌈💰",
+  ];
+
+  const repliesArr = replyArr.concat(newRepliesArr);
+
   const getRandomReply = function (textArr) {
-    return textArr[Math.floor(Math.random() * textArr.length)];
+    return repliesArr[Math.floor(Math.random() * textArr.length)];
   };
 
   const cmd = text.match(/(?<=\/).*?(?=$| |@)/);
